@@ -7,9 +7,9 @@ for line in sys.stdin:
     tweet = json.loads(line)
     #リツイート除外
     if 'retweeted_status' not in tweet:
-       #日本語以外除外
+       #日本語に限定
        if tweet['user']['lang'] == 'ja':
-          #画像つき以外除外
+          #画像つきに限定
           if tweet['entities']['media'][0] is None:
               pass
           else:
