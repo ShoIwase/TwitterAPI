@@ -1,6 +1,6 @@
-# twitterAPI
+# Twitterからランダムで画像を保存
 
-ランダムサンプリングでツイートを集める。
+ランダムサンプリングでツイートを集める（Ctrl+Cで止める）。
 ```
 python stream.py > tweets
 ```
