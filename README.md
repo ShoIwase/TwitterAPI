@@ -1,6 +1,12 @@
 # Twitterからランダムで画像を取得
 ## 準備
-`auth.py`にOAuth認証に必要な4項目を追記する。
+twitter APIを使用するためにtweepyをインストールする。
+```
+sudo apt-get install python-pip
+sudo pip install tweepy
+```
+
+https://apps.twitter.com/ で新しいアプリを作り，`auth.py`にOAuth認証に必要な4項目を追記する。
 
 ## 実行
 ランダムサンプリングでツイートを集める（Ctrl+Cで止める）。
