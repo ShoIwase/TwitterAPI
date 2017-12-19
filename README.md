@@ -8,9 +8,14 @@
 python stream.py > tweets
 ```
 
-集めたツイートからスクリーンネーム、プロフィール文、本文、画像URLを取り出す。
+集めたツイートからスクリーンネーム、プロフィール文、本文、画像URLを抜き出す。
 ```
 python image.py < tweets > result.csv
+```
+
+（最初から抜き出したものだけ集める場合）
+```
+python stream.py | python image.py > result.csv
 ```
 
 画像URLのリストを作る。
